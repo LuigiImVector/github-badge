@@ -11,7 +11,7 @@ style="-webkit-user-select: none; -moz-user-select: none; -ms-user-select: none;
   </text>
   <rect x="124" y="0" width="75" height="75" style="fill:#F84949"></rect>
   <text x="124" y="75" font-family="Segoe UI" font-size="13" fill="white" font-weight="bold">
-    <tspan x="162.5" text-anchor="middle" y="45.891675" font-size="40" id="years-number">5</tspan>
+    <tspan x="162.5" text-anchor="middle" y="45.891675" font-size="40" id="years-number">{years}</tspan>
     <tspan x="162.5" text-anchor="middle" y="67.5"  font-weight="bold">years ago</tspan>
   </text>
 </g>  
