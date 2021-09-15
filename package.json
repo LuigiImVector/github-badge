@@ -1,15 +1,21 @@
 {
     "name": "github-badge",
-    "version": "1.0.0",
-    "description": "",
+    "version": "",
+    "homepage": "https://github.com/LuigiImVector/github-badge/blob/main/README.md",
     "main": "index.js",
-    "keywords": [],
-    "author": "",
-    "license": "ISC",
+    "license": "MIT",
+    "author": {
+        "name": "LuigiImVector",
+        "url": "https://github.com/LuigiImVector"
+    },
     "dependencies": {
       "dirname-filename-esm": "^1.1.1",
       "pupa": "^3.1.0",
       "vercel": "^23.1.2"
     },
+    "bugs": {
+        "url": "https://github.com/LuigiImVector/github-badge/issues"
+    },
     "type": "module"
 }
+
