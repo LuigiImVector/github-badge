@@ -5,7 +5,7 @@ import { join } from 'path'
 import { dirname } from 'dirname-filename-esm'
 
 const __dirname = dirname(import.meta)
-const template = readFileSync(join(__dirname, 'badge.svg'), 'utf8')
+const template = readFileSync(join(__dirname, '../badge.svg'), 'utf8')
 
 export default (req, res) => {
   let { years } = req.query
