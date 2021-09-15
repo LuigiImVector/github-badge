@@ -9,13 +9,11 @@
         "url": "https://github.com/LuigiImVector"
     },
     "dependencies": {
-      "dirname-filename-esm": "^1.1.1",
-      "pupa": "^3.1.0",
-      "vercel": "^23.1.2"
+        "dirname-filename-esm": "^1.1.1",
+        "pupa": "^3.1.0"
     },
     "bugs": {
         "url": "https://github.com/LuigiImVector/github-badge/issues"
     },
     "type": "module"
 }
-
