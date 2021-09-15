@@ -15,5 +15,4 @@ style="-webkit-user-select: none; -moz-user-select: none; -ms-user-select: none;
     <tspan x="162.5" text-anchor="middle" y="67.5"  font-weight="bold">years ago</tspan>
   </text>
 </g>
-<script xlink:href="script.js" />
 </svg>
