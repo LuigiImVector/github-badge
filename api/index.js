@@ -1,9 +1,9 @@
 function colorBadge(color) {
   switch(color) {
     case "red":
-      return readFileSync(join(__dirname, '../red.svg'), 'utf8');
+      return "red"
     case "red":
-      return readFileSync(join(__dirname, '../blue.svg'), 'utf8');
+      return "blue"
     default:
       return 0;
   }
@@ -22,8 +22,8 @@ const template = readFileSync(join(__dirname, '../red.svg'), 'utf8')
 export default (req, res) => {
   let { years } = req.query
   let { color } = req.query
-  console.log(color);
-  console.log(colorBadge(color));
+  console.log({color});
+  console.log(colorBadge({color}));
   if (typeof years !== 'string') return res.status(400).end()
   res.setHeader('Content-Type', 'image/svg+xml')
   res.end(pupa(template, { years }))
