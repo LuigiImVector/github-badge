@@ -20,10 +20,10 @@ const __dirname = dirname(import.meta);
 const template = readFileSync(join(__dirname, '../blue.svg'), 'utf8');
 
 export default (req, res) => {
-  let { years } = req.query.color
+  let { color } = req.query
   //let { color } = req.query.color
   //const template = colorBadge({color});
-  if (typeof years !== 'string') return res.status(400).end()
+  if (typeof color !== 'string') return res.status(400).end()
   res.setHeader('Content-Type', 'image/svg+xml')
-  res.end(pupa(template, { years }))
+  res.end(pupa(template, { color }))
 }
