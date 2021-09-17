@@ -8,7 +8,7 @@ const __dirname = dirname(import.meta);
 const template = readFileSync(join(__dirname, '../blue.svg'), 'utf8');
 
 export default (req, res) => {
-  let { years } = req.param('color')
+  let { years } = req.query.color 
   //let { color } = req.query.color
   //const template = colorBadge({color});
   if (typeof years !== 'string') return res.status(400).end()
