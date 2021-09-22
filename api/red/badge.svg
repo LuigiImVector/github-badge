@@ -1,0 +1,18 @@
+<svg width="200" height="75" xmlns="http://www.w3.org/2000/svg"
+xmlns:xlink="http://www.w3.org/1999/xlink"
+style="-webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;">
+  
+
+<g>  
+  <rect x="0" y="0" width="125" height="75" style="fill:#F84949F5"></rect>
+  <text x="0" y="37.5" font-family="Segoe UI" font-size="16"  font-weight="bold" fill="white">
+    <tspan x="62.5" text-anchor="middle" dy="-3.5%">I started</tspan>
+    <tspan x="62.5" text-anchor="middle" dy="25%">programming</tspan>
+  </text>
+  <rect x="124" y="0" width="75" height="75" style="fill:#F84949"></rect>
+  <text x="124" y="75" font-family="Segoe UI" font-size="13" fill="white" font-weight="bold">
+    <tspan x="162.5" text-anchor="middle" y="45.891675" font-size="40" id="years-number">{years}</tspan>
+    <tspan x="162.5" text-anchor="middle" y="67.5"  font-weight="bold">years ago</tspan>
+  </text>
+</g>  
+</svg>
