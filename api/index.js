@@ -17,6 +17,6 @@ export default (req, res) => {
   }
   //const template = colorBadge({color});
   if (typeof years !== 'string') return res.status(400).end()
-  res.setHeader('Content-Type', 'image/svg+xml')
+  res.setHeader('Content-Type', 'image/svg+xml; charset=utf-8')
   res.end(pupa(template, { years }))
 }
