@@ -7,16 +7,22 @@ import { dirname } from 'dirname-filename-esm'
 const __dirname = dirname(import.meta);
 const template = readFileSync(join(__dirname, '../red.svg'), 'utf8');
 
-
+function getParameterByName(name, url = window.location.href) {
+  name = name.replace(/[\[\]]/g, '\\$&');
+  var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+      results = regex.exec(url);
+  if (!results) return null;
+  if (!results[2]) return '';
+  return decodeURIComponent(results[2].replace(/\+/g, ' '));
+}
 
 export default (req, res) => {
-  let { years } = req.query.years
-  let color = req.query.color
+  let { years } = getParameterByName("years");
 
-  if(color == "red") {
+  if(getParameterByName("color")="red") {
     let { first } = "49B2F8F5"
     let { second } = "49B2F8"
-  } else {
+  } else if (getParameterByName("color")="blue") {
     let { first } = "49B2F8F5"
     let { second } = "49B2F8"
   }
@@ -30,3 +36,5 @@ export default (req, res) => {
   res.setHeader('Content-Type', 'image/svg+xml')
   res.end(pupa(template, [{ first }, { second }, { years }]))
 }
+
+
