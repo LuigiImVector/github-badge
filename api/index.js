@@ -1,4 +1,3 @@
-// Thanks to https://stackoverflow.com/questions/69164294/create-a-github-badge
 import pupa from 'pupa'
 import { readFileSync } from 'fs'
 import { join } from 'path'
@@ -17,9 +16,9 @@ const __dirname = dirname(import.meta);
 
 export default (req, res) => {
 
-  if(getParameterByName("color")="red") {
+  if(getParameterByName("color")=="red") {
     const template = readFileSync(join(__dirname, '../red.svg'), 'utf8');
-  } else if (getParameterByName("color")="blue") {
+  } else if (getParameterByName("color")=="blue") {
     const template = readFileSync(join(__dirname, '../blue.svg'), 'utf8');
   }
 
