@@ -19,10 +19,10 @@ function getParameterByName(name, url = window.location.href) {
 export default (req, res) => {
   let { years } = getParameterByName("years");
 
-  if(getParameterByName("color")="red") {
+  if(getParameterByName("color")=="red") {
     let { first } = "49B2F8F5"
     let { second } = "49B2F8"
-  } else if (getParameterByName("color")="blue") {
+  } else if (getParameterByName("color")=="blue") {
     let { first } = "49B2F8F5"
     let { second } = "49B2F8"
   }
