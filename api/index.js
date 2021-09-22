@@ -18,9 +18,9 @@ const __dirname = dirname(import.meta);
 export default (req, res) => {
 
   if(getParameterByName("color")="red") {
-    const template = readFileSync(join(__dirname, 'red.svg'), 'utf8');
+    const template = readFileSync(join(__dirname, '../red.svg'), 'utf8');
   } else if (getParameterByName("color")="blue") {
-    const template = readFileSync(join(__dirname, 'blue.svg'), 'utf8');
+    const template = readFileSync(join(__dirname, '../blue.svg'), 'utf8');
   }
 
 
