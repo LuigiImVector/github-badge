@@ -13,7 +13,7 @@ export default (req, res) => {
   const template = readFileSync(join(__dirname, '../'+color.toString()+'.svg'), 'utf8');
 
   //const template = colorBadge({color});
-  if (typeof years !== 'string') return res.status(400).end()
+  //if (typeof years !== 'string') return res.status(400).end()
   res.setHeader('Content-Type', 'image/svg+xml')
   res.end(pupa(template, { years }))
 }
