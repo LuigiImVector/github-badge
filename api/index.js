@@ -24,10 +24,10 @@ export default (req, res) => {
   }
 
 
-  let { years } = getParameterByName("years");
+  let years = getParameterByName("years");
   //let { color } = req.query.color
   //const template = colorBadge({color});
   if (typeof years !== 'string') return res.status(400).end()
   res.setHeader('Content-Type', 'image/svg+xml')
-  res.end(pupa(template, { years }))
+  res.end(pupa(template, years))
 }
