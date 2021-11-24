@@ -7,11 +7,9 @@ In this repository i will add various type of badges for your README.
 
 ## When you started programming?
 
-[![Preview](https://github-badge-three.vercel.app/api/red?years=2)](https://github.com/LuigiImVector/github-badge)
-
 You can show how many years of experience you have in the development world.
 
-**Write this in your README:**
+**Write this in your README** (remember to replace `COLOR` and `NUMBER`):
 
 ```md
 [![Preview](https://github-badge-three.vercel.app/api/COLOR?years=NUMBER)](https://github.com/LuigiImVector/github-badge)
