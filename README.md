@@ -14,7 +14,7 @@ You can show how many years of experience you have in the development world.
 **Write this in your README:**
 
 ```md
-![Preview](https://github-badge-three.vercel.app/api/COLOR?years=NUMBER)
+[![Preview](https://github-badge-three.vercel.app/api/COLOR?years=NUMBER)](https://github.com/LuigiImVector/github-badge)
 ```
 
 Color | Example
