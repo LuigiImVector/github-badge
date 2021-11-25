@@ -4,8 +4,7 @@ In this repository i will add various type of badges for your README.
 
 ---
 
-
-## When you started programming?
+## When did you start programming?
 
 You can show how many years of experience you have in the development world.
 
